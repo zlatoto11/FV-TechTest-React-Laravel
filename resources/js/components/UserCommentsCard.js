@@ -35,7 +35,7 @@ export default class UserCommentsCard extends Component {
                                 <label htmlFor="formComments">Comments</label>
                                 <input
                                     type="text"
-                                    className="form-control"
+                                    className="form-control commentForm"
                                     id="formComments"
                                     onChange={e =>
                                         this.props.setStateValue(
@@ -43,7 +43,6 @@ export default class UserCommentsCard extends Component {
                                             e.target.value
                                         )
                                     }
-                                    placeholder="Place your comments here."
                                 ></input>
                             </div>
                         </div>

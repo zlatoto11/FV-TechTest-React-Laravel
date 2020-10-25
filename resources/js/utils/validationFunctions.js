@@ -30,7 +30,7 @@ export const validateAll = params => {
     }
     //Email Validation, already pre-checked.
     if (!emailIsValid(params.email)) {
-        alert("Email Address is not valid. It cannot be empty.");
+        alert("Email Address is not valid.");
         return false;
     }
 

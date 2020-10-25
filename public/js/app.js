@@ -6339,7 +6339,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\r\n    box-sizing: border-box;\r\n}\r\n.App {\r\n    height: 100vh;\r\n    background-color: #d2e1ff;\r\n    margin: 0 auto;\r\n}\r\n.UserInputForm__Form {\r\n    min-width: 700px;\r\n    max-width: 700px;\r\n    margin: 0 auto;\r\n    background-color: #ffffff;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\nform {\r\n    padding: 0.3em;\r\n}\r\n\r\ninput[type=\"submit\"] {\r\n    background-color: #4caf50;\r\n    color: white;\r\n    padding: 12px 20px;\r\n    border: none;\r\n    border-radius: 4px;\r\n    cursor: pointer;\r\n}\r\ninput[type=\"submit\"]:hover {\r\n    background-color: #45a049;\r\n}\r\n\r\ninput {\r\n    box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.19) inset;\r\n    -webkit-box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.19) inset;\r\n    -moz-box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.19) inset;\r\n}\r\n\r\n.card > .card-header {\r\n    background: linear-gradient(\r\n        0deg,\r\n        rgba(255, 188, 0, 1) 3%,\r\n        rgba(255, 205, 0, 0.8687850140056023) 96%\r\n    );\r\n\r\n    border-radius: 15px;\r\n    margin-bottom: 3px;\r\n}\r\n\r\n.card {\r\n    background-color: #dedede;\r\n    border-style: none;\r\n    border: 0px;\r\n}\r\n\r\n.card-body {\r\n    background-color: #dedede;\r\n    padding: 0 1rem;\r\n}\r\n\r\nlabel {\r\n    font-weight: 900;\r\n    margin-bottom: 0px;\r\n}\r\n\r\n.form-group {\r\n    margin: 0.4rem 0;\r\n}\r\n\r\nbutton,\r\n.btn-link,\r\n.btn-block,\r\n.text-left {\r\n    text-shadow: 1px 1px 1px #000000;\r\n    color: white;\r\n}\r\n\r\n.nextButton {\r\n    width: 100%;\r\n    color: white;\r\n    border: none;\r\n    background: rgb(104, 34, 195);\r\n    background: linear-gradient(\r\n        0deg,\r\n        rgba(104, 34, 195, 1) 0%,\r\n        rgba(69, 45, 253, 1) 100%\r\n    );\r\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#6822c3\",endColorstr=\"#452dfd\",GradientType=1);\r\n}\r\n\r\n.genderChoice {\r\n    box-shadow: inset 0px -4px 40px 3px rgba(0, 0, 0, 0.2);\r\n}\r\n", ""]);
+exports.push([module.i, "* {\r\n    box-sizing: border-box;\r\n}\r\n.App {\r\n    height: 100vh;\r\n    background-color: #d2e1ff;\r\n    margin: 0 auto;\r\n}\r\n.UserInputForm__Form {\r\n    min-width: 700px;\r\n    max-width: 700px;\r\n    margin: 0 auto;\r\n    background-color: #ffffff;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\nform {\r\n    padding: 0.3em;\r\n}\r\n\r\ninput {\r\n    box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.19) inset;\r\n    -webkit-box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.19) inset;\r\n    -moz-box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.19) inset;\r\n}\r\n.card {\r\n    background-color: #dedede;\r\n    border-style: none;\r\n    border: 0px;\r\n}\r\n.card-header {\r\n    border: none !important;\r\n    border-radius: 10px !important;\r\n    margin-bottom: 3px !important;\r\n    background: linear-gradient(\r\n        0deg,\r\n        rgba(255, 188, 0, 1) 3%,\r\n        rgba(255, 205, 0, 0.8687850140056023) 96%\r\n    );\r\n}\r\n\r\n.card-body {\r\n    background-color: #dedede;\r\n    padding: 0 1rem;\r\n}\r\n\r\n.genderChoice {\r\n    box-shadow: inset 0px -4px 10px 4px rgba(0, 0, 0, 0.2);\r\n    border-radius: 10px;\r\n}\r\n\r\nlabel {\r\n    font-weight: 900;\r\n    margin-bottom: 0px;\r\n}\r\n\r\n.form-group {\r\n    margin: 0.4rem 0;\r\n}\r\n\r\nbutton,\r\n.btn-link,\r\n.btn-block,\r\n.text-left {\r\n    text-shadow: 1px 1px 1px #000000;\r\n    color: white;\r\n}\r\n\r\n.nextButton {\r\n    width: 100%;\r\n    float: right;\r\n    color: white;\r\n    border: none;\r\n    background: rgb(104, 34, 195);\r\n    background: linear-gradient(\r\n        0deg,\r\n        rgba(104, 34, 195, 1) 0%,\r\n        rgba(69, 45, 253, 1) 100%\r\n    );\r\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#6822c3\",endColorstr=\"#452dfd\",GradientType=1);\r\n}\r\n\r\n.commentForm {\r\n    max-width: 66%;\r\n    height: 150px;\r\n}\r\n\r\nh6 {\r\n    font-weight: 900;\r\n    margin-bottom: 0;\r\n    margin: 0 5px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -66548,12 +66548,11 @@ var UserCommentsCard = /*#__PURE__*/function (_Component) {
         htmlFor: "formComments"
       }, "Comments"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
         type: "text",
-        className: "form-control",
+        className: "form-control commentForm",
         id: "formComments",
         onChange: function onChange(e) {
           return _this.props.setStateValue("comments", e.target.value);
-        },
-        placeholder: "Place your comments here."
+        }
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "form-row"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -66694,23 +66693,20 @@ var UserContactDetailsCard = /*#__PURE__*/function (_Component) {
         value: "Other"
       }, "Other")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "form-row"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-        htmlFor: "formDOB"
-      }, "Date of Birth"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h6", null, "Date Of Birth")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "form-group col-md-1"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
         type: "text",
-        className: "form-control position-static",
+        className: "form-control dOBInputs",
         id: "formDOB",
         onChange: function onChange(e) {
           return _this2.props.setStateValue("dateOfBirthDD", e.target.value);
         }
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "form-group col-md-1"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-        htmlFor: "formDOBMM",
-        className: "sr-only"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
         type: "text",
         className: "form-control ",
         id: "formDOBMM",
@@ -66719,9 +66715,7 @@ var UserContactDetailsCard = /*#__PURE__*/function (_Component) {
         }
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "form-group col-md-1"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-        htmlFor: "formDOBYYYY"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
         type: "text",
         className: "form-control y",
         id: "formDOBYYYY",
@@ -67057,7 +67051,8 @@ var UserInputForm = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "UserInputForm__Form"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        onSubmit: this.onSubmit
+        onSubmit: this.onSubmit,
+        noValidate: true
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "accordion",
         id: "accordionExample"
@@ -67129,7 +67124,7 @@ var validateAll = function validateAll(params) {
 
 
   if (!emailIsValid(params.email)) {
-    alert("Email Address is not valid. It cannot be empty.");
+    alert("Email Address is not valid.");
     return false;
   } //Phone Validation.
 

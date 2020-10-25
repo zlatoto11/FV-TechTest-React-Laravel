@@ -85,7 +85,7 @@ export default class UserInputForm extends Component {
         return (
             <div className="App d-flex align-items-center justify-content-center">
                 <div className="UserInputForm__Form">
-                    <form onSubmit={this.onSubmit}>
+                    <form onSubmit={this.onSubmit} noValidate>
                         <div className="accordion" id="accordionExample">
                             <UserDetailsCard
                                 setStateValue={this.setStateValue}

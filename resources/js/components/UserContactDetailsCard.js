@@ -70,11 +70,14 @@ export default class UserContactDetailsCard extends Component {
                             </div>
                         </div>
                         <div className="form-row">
-                            <label htmlFor="formDOB">Date of Birth</label>
+                            <h6>Date Of Birth</h6>
+                        </div>
+                        <div className="form-row">
                             <div className="form-group col-md-1">
+                                {/* <label htmlFor="formDOB">Date of Birth</label> */}
                                 <input
                                     type="text"
-                                    className="form-control position-static"
+                                    className="form-control dOBInputs"
                                     id="formDOB"
                                     onChange={e =>
                                         this.props.setStateValue(
@@ -85,10 +88,6 @@ export default class UserContactDetailsCard extends Component {
                                 ></input>
                             </div>
                             <div className="form-group col-md-1">
-                                <label
-                                    htmlFor="formDOBMM"
-                                    className="sr-only"
-                                ></label>
                                 <input
                                     type="text"
                                     className="form-control "
@@ -102,7 +101,6 @@ export default class UserContactDetailsCard extends Component {
                                 ></input>
                             </div>
                             <div className="form-group col-md-1">
-                                <label htmlFor="formDOBYYYY"></label>
                                 <input
                                     type="text"
                                     className="form-control y"
