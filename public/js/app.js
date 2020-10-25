@@ -6339,7 +6339,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\r\n    box-sizing: border-box;\r\n}\r\n.App {\r\n    height: 100vh;\r\n    background-color: #d2e1ff;\r\n    margin: 0 auto;\r\n}\r\n.UserInputForm__Form {\r\n    max-width: 700px;\r\n    margin: 0 auto;\r\n    background-color: #ffffff;\r\n}\r\n\r\nform {\r\n    padding: 0.5em;\r\n}\r\n\r\np {\r\n    text-align: center;\r\n    font-weight: 500;\r\n}\r\ninput[type=\"text\"],\r\ninput[type=\"email\"],\r\nselect,\r\ntextarea {\r\n    width: 100%;\r\n    padding: 12px;\r\n    border: 1px solid #ccc;\r\n    border-radius: 4px;\r\n    box-sizing: border-box;\r\n    margin-top: 6px;\r\n    margin-bottom: 16px;\r\n    resize: vertical;\r\n}\r\ninput[type=\"submit\"] {\r\n    background-color: #4caf50;\r\n    color: white;\r\n    padding: 12px 20px;\r\n    border: none;\r\n    border-radius: 4px;\r\n    cursor: pointer;\r\n}\r\ninput[type=\"submit\"]:hover {\r\n    background-color: #45a049;\r\n}\r\n.container {\r\n    border-radius: 5px;\r\n    background-color: #f2f2f2;\r\n    padding: 20px;\r\n}\r\n.accordion > .card > .card-header {\r\n    background: linear-gradient(\r\n        0deg,\r\n        rgba(255, 188, 0, 1) 3%,\r\n        rgba(255, 205, 0, 0.8687850140056023) 96%\r\n    );\r\n\r\n    border-radius: 15px;\r\n    margin-bottom: 3px;\r\n}\r\n", ""]);
+exports.push([module.i, "* {\r\n    box-sizing: border-box;\r\n}\r\n.App {\r\n    height: 100vh;\r\n    background-color: #d2e1ff;\r\n    margin: 0 auto;\r\n}\r\n.UserInputForm__Form {\r\n    min-width: 700px;\r\n    max-width: 700px;\r\n    margin: 0 auto;\r\n    background-color: #ffffff;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\nform {\r\n    padding: 0.3em;\r\n}\r\n\r\ninput[type=\"submit\"] {\r\n    background-color: #4caf50;\r\n    color: white;\r\n    padding: 12px 20px;\r\n    border: none;\r\n    border-radius: 4px;\r\n    cursor: pointer;\r\n}\r\ninput[type=\"submit\"]:hover {\r\n    background-color: #45a049;\r\n}\r\n\r\ninput {\r\n    box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.19) inset;\r\n    -webkit-box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.19) inset;\r\n    -moz-box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.19) inset;\r\n}\r\n\r\n.card > .card-header {\r\n    background: linear-gradient(\r\n        0deg,\r\n        rgba(255, 188, 0, 1) 3%,\r\n        rgba(255, 205, 0, 0.8687850140056023) 96%\r\n    );\r\n\r\n    border-radius: 15px;\r\n    margin-bottom: 3px;\r\n}\r\n\r\n.card {\r\n    background-color: #dedede;\r\n    border-style: none;\r\n    border: 0px;\r\n}\r\n\r\n.card-body {\r\n    background-color: #dedede;\r\n    padding: 0 1rem;\r\n}\r\n\r\nlabel {\r\n    font-weight: 900;\r\n    margin-bottom: 0px;\r\n}\r\n\r\n.form-group {\r\n    margin: 0.4rem 0;\r\n}\r\n\r\nbutton,\r\n.btn-link,\r\n.btn-block,\r\n.text-left {\r\n    text-shadow: 1px 1px 1px #000000;\r\n    color: white;\r\n}\r\n\r\n.nextButton {\r\n    width: 100%;\r\n    color: white;\r\n    border: none;\r\n    background: rgb(104, 34, 195);\r\n    background: linear-gradient(\r\n        0deg,\r\n        rgba(104, 34, 195, 1) 0%,\r\n        rgba(69, 45, 253, 1) 100%\r\n    );\r\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#6822c3\",endColorstr=\"#452dfd\",GradientType=1);\r\n}\r\n\r\n.genderChoice {\r\n    box-shadow: inset 0px -4px 40px 3px rgba(0, 0, 0, 0.2);\r\n}\r\n", ""]);
 
 // exports
 
@@ -66464,6 +66464,427 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/components/UserCommentsCard.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/UserCommentsCard.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UserCommentsCard; });
+/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserInputForm.css */ "./resources/js/components/UserInputForm.css");
+/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var UserCommentsCard = /*#__PURE__*/function (_Component) {
+  _inherits(UserCommentsCard, _Component);
+
+  var _super = _createSuper(UserCommentsCard);
+
+  function UserCommentsCard(props) {
+    _classCallCheck(this, UserCommentsCard);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(UserCommentsCard, [{
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "card"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "card-header",
+        id: "headingThree"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "mb-0"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        className: "btn btn-link btn-block text-left collapsed",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#collapseThree",
+        "aria-expanded": "false",
+        "aria-controls": "collapseThree"
+      }, "Step 3: Final Comments"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "collapseThree",
+        className: "collapse",
+        "aria-labelledby": "headingThree",
+        "data-parent": "#accordionExample"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "card-body"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md 8"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+        htmlFor: "formComments"
+      }, "Comments"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "formComments",
+        onChange: function onChange(e) {
+          return _this.props.setStateValue("comments", e.target.value);
+        },
+        placeholder: "Place your comments here."
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-2 align-self-end ml-auto text-right"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        className: "btn nextButton btn-primary",
+        type: "submit",
+        value: "Submit"
+      }, "Next ", ">"))))));
+    }
+  }]);
+
+  return UserCommentsCard;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/UserContactDetailsCard.js":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/UserContactDetailsCard.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UserContactDetailsCard; });
+/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserInputForm.css */ "./resources/js/components/UserInputForm.css");
+/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+var UserContactDetailsCard = /*#__PURE__*/function (_Component) {
+  _inherits(UserContactDetailsCard, _Component);
+
+  var _super = _createSuper(UserContactDetailsCard);
+
+  function UserContactDetailsCard(props) {
+    var _this;
+
+    _classCallCheck(this, UserContactDetailsCard);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "selectGender", function (e) {
+      _this.props.setStateValue("gender", _this.chosenGender.current.value);
+    });
+
+    _this.chosenGender = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createRef();
+    return _this;
+  }
+
+  _createClass(UserContactDetailsCard, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "card"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "card-header",
+        id: "headingTwo"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "mb-0"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        className: "btn btn-link btn-block text-left collapsed",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#collapseTwo",
+        "aria-expanded": "false",
+        "aria-controls": "collapseTwo"
+      }, "Step 2: More Comments"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "collapseTwo",
+        className: "collapse",
+        "aria-labelledby": "headingTwo",
+        "data-parent": "#accordionExample"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "card-body"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-4"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+        htmlFor: "formTelephoneNumber"
+      }, "Telephone Number"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "tel",
+        className: "form-control",
+        id: "formTelephoneNumber",
+        onChange: function onChange(e) {
+          return _this2.props.setStateValue("mobileNumber", e.target.value);
+        }
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-3"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+        htmlFor: "formGenderChoice"
+      }, "Gender"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
+        id: "formGenderChoice",
+        className: "form-control genderChoice",
+        onChange: this.selectGender,
+        ref: this.chosenGender
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+        value: "",
+        disabled: true,
+        selected: true
+      }, "Select Gender"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+        value: "Male"
+      }, "Male"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+        value: "Female"
+      }, "Female"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+        value: "Other"
+      }, "Other")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+        htmlFor: "formDOB"
+      }, "Date of Birth"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-1"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "text",
+        className: "form-control position-static",
+        id: "formDOB",
+        onChange: function onChange(e) {
+          return _this2.props.setStateValue("dateOfBirthDD", e.target.value);
+        }
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-1"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+        htmlFor: "formDOBMM",
+        className: "sr-only"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "text",
+        className: "form-control ",
+        id: "formDOBMM",
+        onChange: function onChange(e) {
+          return _this2.props.setStateValue("dateOfBirthMM", e.target.value);
+        }
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-1"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+        htmlFor: "formDOBYYYY"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "text",
+        className: "form-control y",
+        id: "formDOBYYYY",
+        onChange: function onChange(e) {
+          return _this2.props.setStateValue("dateOfBirthYYYY", e.target.value);
+        }
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-2 align-self-end ml-auto text-right"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        className: "btn nextButton btn-primary",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#collapseThree",
+        "aria-expanded": "false",
+        "aria-controls": "collapseThree"
+      }, "Next ", ">"))))));
+    }
+  }]);
+
+  return UserContactDetailsCard;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/UserDetailsCard.js":
+/*!****************************************************!*\
+  !*** ./resources/js/components/UserDetailsCard.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UserDetailsCard; });
+/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserInputForm.css */ "./resources/js/components/UserInputForm.css");
+/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var UserDetailsCard = /*#__PURE__*/function (_Component) {
+  _inherits(UserDetailsCard, _Component);
+
+  var _super = _createSuper(UserDetailsCard);
+
+  function UserDetailsCard(props) {
+    _classCallCheck(this, UserDetailsCard);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(UserDetailsCard, [{
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "card"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "card-header",
+        id: "headingOne"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "mb-0"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        className: "btn btn-link btn-block text-left",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#collapseOne",
+        "aria-expanded": "true",
+        "aria-controls": "collapseOne"
+      }, "Step 1: Your Details"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "collapseOne",
+        className: "collapse show",
+        "aria-labelledby": "headingOne",
+        "data-parent": "#accordionExample"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "card-body"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-4"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+        htmlFor: "formFirstName"
+      }, "First Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "formFirstName",
+        onChange: function onChange(e) {
+          return _this.props.setStateValue("fname", e.target.value);
+        }
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-4"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+        htmlFor: "formSurname"
+      }, "Surname"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "formSurname",
+        onChange: function onChange(e) {
+          return _this.props.setStateValue("lname", e.target.value);
+        }
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-4"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+        htmlFor: "formEmail"
+      }, "Email Address:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "email",
+        className: "form-control",
+        id: "formEmail",
+        onChange: function onChange(e) {
+          return _this.props.setStateValue("email", e.target.value);
+        }
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-group col-md-2 align-self-end ml-auto text-right"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        className: "btn nextButton btn-primary",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#collapseTwo",
+        "aria-expanded": "false",
+        "aria-controls": "collapseTwo"
+      }, "Next ", ">"))))));
+    }
+  }]);
+
+  return UserDetailsCard;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/UserInputForm.css":
 /*!***************************************************!*\
   !*** ./resources/js/components/UserInputForm.css ***!
@@ -66512,6 +66933,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_UserInputForm_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils_validationFunctions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/validationFunctions */ "./resources/js/utils/validationFunctions.js");
+/* harmony import */ var _UserDetailsCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UserDetailsCard */ "./resources/js/components/UserDetailsCard.js");
+/* harmony import */ var _UserContactDetailsCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./UserContactDetailsCard */ "./resources/js/components/UserContactDetailsCard.js");
+/* harmony import */ var _UserCommentsCard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./UserCommentsCard */ "./resources/js/components/UserCommentsCard.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -66534,34 +66959,16 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
 
 
-function emailIsValid(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
 
-function nameValidation(input) {
-  var lettersRegEx = /^[A-Za-z]+$/;
 
-  if (input.match(lettersRegEx) && input != "") {
-    return true;
-  } else {
-    return false;
-  }
-}
 
-function phoneNumberValidation(phoneNumber) {
-  var phoneRegEx = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
-  if (phoneNumber.match(phoneRegEx)) {
-    return true;
-  } else {
-    return false;
-  }
-}
 
 var UserInputForm = /*#__PURE__*/function (_Component) {
   _inherits(UserInputForm, _Component);
@@ -66574,6 +66981,58 @@ var UserInputForm = /*#__PURE__*/function (_Component) {
     _classCallCheck(this, UserInputForm);
 
     _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "setStateValue", function (key, value) {
+      _this.setState(_defineProperty({}, key, value));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "selectGender", function (e) {
+      console.log(e);
+
+      _this.setState({
+        gender: _this.chosenGender.current.value
+      });
+
+      console.log(_this.chosenGender.current.value);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onSubmit", function (e) {
+      e.preventDefault();
+      var _this$state = _this.state,
+          fname = _this$state.fname,
+          lname = _this$state.lname,
+          email = _this$state.email,
+          mobileNumber = _this$state.mobileNumber,
+          gender = _this$state.gender,
+          dateOfBirthDD = _this$state.dateOfBirthDD,
+          dateOfBirthMM = _this$state.dateOfBirthMM,
+          dateOfBirthYYYY = _this$state.dateOfBirthYYYY,
+          comments = _this$state.comments; //Validations
+
+      if (!Object(_utils_validationFunctions__WEBPACK_IMPORTED_MODULE_4__["validateAll"])(_this.state)) return;
+      var finalDate = dateOfBirthYYYY + "-" + dateOfBirthMM + "-" + dateOfBirthDD;
+
+      _this.setState({
+        dateOfBirth: finalDate
+      }); //Automatically sets key to the variable name and value to variable value.
+      //if value not provided, e.g. dont need to do fname: fname,
+
+
+      var user = {
+        fname: fname,
+        lname: lname,
+        email: email,
+        mobileNumber: mobileNumber,
+        gender: gender,
+        dateOfBirth: finalDate,
+        comments: comments
+      };
+      axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("http://127.0.0.1:8000/user/add", user).then(function (res) {
+        return console.log(res.data);
+      });
+      alert("Information Sent.");
+    });
+
     _this.onSubmit = _this.onSubmit.bind(_assertThisInitialized(_this));
     _this.state = {
       fname: "",
@@ -66582,220 +67041,118 @@ var UserInputForm = /*#__PURE__*/function (_Component) {
       mobileNumber: "",
       gender: "",
       dateOfBirth: "",
+      dateOfBirthDD: "",
+      dateOfBirthMM: "",
+      dateOfBirthYYYY: "",
       comments: ""
     };
     return _this;
   }
 
   _createClass(UserInputForm, [{
-    key: "onSubmit",
-    value: function onSubmit(e) {
-      e.preventDefault(); //Name Validation
-
-      if (!nameValidation(this.state.fname)) {
-        alert("First Name is Required. It cannot be empty or use symbols.");
-        return;
-      }
-
-      if (!nameValidation(this.state.lname)) {
-        alert("Last Name is Required.  It cannot be empty or use symbols.");
-        return;
-      } //Email Validation, already pre-checked.
-
-
-      if (!emailIsValid(this.state.email)) {
-        alert("Email Address is not valid. It cannot be empty.");
-        return;
-      } //Phone Validation.
-
-
-      if (!phoneNumberValidation(this.state.mobileNumber)) {
-        alert("Phone Number is not valid. Please only use digits.");
-        return;
-      }
-
-      var user = {
-        fname: this.state.fname,
-        lname: this.state.lname,
-        email: this.state.email,
-        mobileNumber: this.state.mobileNumber,
-        gender: this.state.gender,
-        dateOfBirth: this.state.dateOfBirth,
-        comments: this.state.comments
-      };
-      console.log(user);
-      axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("http://127.0.0.1:8000/user/add", user).then(function (res) {
-        return console.log(res.data);
-      });
-    }
-  }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
-
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "App"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Input User"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "App d-flex align-items-center justify-content-center"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "UserInputForm__Form"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         onSubmit: this.onSubmit
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "accordion",
         id: "accordionExample"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-header",
-        id: "headingOne"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-        className: "mb-0"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-link btn-block text-left",
-        type: "button",
-        "data-toggle": "collapse",
-        "data-target": "#collapseOne",
-        "aria-expanded": "true",
-        "aria-controls": "collapseOne"
-      }, "Step 1: Your Details"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "collapseOne",
-        className: "collapse show",
-        "aria-labelledby": "headingOne",
-        "data-parent": "#accordionExample"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "First Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        id: "fname",
-        name: "firstname",
-        onChange: function onChange(e) {
-          return _this2.setState({
-            fname: e.target.value
-          });
-        },
-        placeholder: "Your first name..."
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Surname"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        id: "lname",
-        name: "lastname",
-        onChange: function onChange(e) {
-          return _this2.setState({
-            lname: e.target.value
-          });
-        },
-        placeholder: "Your last name..."
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Email Address"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "email",
-        id: "eAddress",
-        name: "emailAddress",
-        onChange: function onChange(e) {
-          return _this2.setState({
-            email: e.target.value
-          });
-        },
-        placeholder: "Your E-mail Address.."
-      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-header",
-        id: "headingTwo"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-        className: "mb-0"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-link btn-block text-left collapsed",
-        type: "button",
-        "data-toggle": "collapse",
-        "data-target": "#collapseTwo",
-        "aria-expanded": "false",
-        "aria-controls": "collapseTwo"
-      }, "Step 2: More Comments"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "collapseTwo",
-        className: "collapse",
-        "aria-labelledby": "headingTwo",
-        "data-parent": "#accordionExample"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Telephone Number"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "tel",
-        id: "mNumber",
-        name: "mobileNumber",
-        onChange: function onChange(e) {
-          return _this2.setState({
-            mobileNumber: e.target.value
-          });
-        },
-        placeholder: "Your Mobile Number..."
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Gender"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        id: "uGender",
-        name: "userGender",
-        onChange: function onChange(e) {
-          return _this2.setState({
-            gender: e.target.value
-          });
-        },
-        placeholder: "Your Gender..."
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Date Of Birth"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "date",
-        id: "dOBirth",
-        name: "dateOfBirth",
-        onChange: function onChange(e) {
-          return _this2.setState({
-            dateOfBirth: e.target.value
-          });
-        },
-        placeholder: "Your Date of Birth..."
-      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-header",
-        id: "headingThree"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-        className: "mb-0"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-link btn-block text-left collapsed",
-        type: "button",
-        "data-toggle": "collapse",
-        "data-target": "#collapseThree",
-        "aria-expanded": "false",
-        "aria-controls": "collapseThree"
-      }, "Step 3: Final Comments"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "collapseThree",
-        className: "collapse",
-        "aria-labelledby": "headingThree",
-        "data-parent": "#accordionExample"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Comments"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
-        id: "uComments",
-        name: "userComments",
-        onChange: function onChange(e) {
-          return _this2.setState({
-            comments: e.target.value
-          });
-        },
-        placeholder: "Please write any comments in this field."
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "submit",
-        value: "Submit"
-      }))))))));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserDetailsCard__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        setStateValue: this.setStateValue
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserContactDetailsCard__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        setStateValue: this.setStateValue
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserCommentsCard__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        setStateValue: this.setStateValue
+      })))));
     }
   }]);
 
   return UserInputForm;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]); // •	First name (required)
-// •	Last name (required)
-// •	E-mail address (required, must be a valid email address, e.g. name@example.com)
-// •	Mobile number (required, must be a valid UK mobile number, e.g. 07000000000)
-// •	Gender (required)
-// •	Date of birth (required, must follow the pattern of dd/mm/yyyy, e.g. 02/11/1990)
-// •	Comments (can be empty)
-//export default UserInputForm;
-
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
 
 if (document.getElementById("mainPage__User__Input")) {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserInputForm, null), document.getElementById("mainPage__User__Input"));
 }
+
+/***/ }),
+
+/***/ "./resources/js/utils/validationFunctions.js":
+/*!***************************************************!*\
+  !*** ./resources/js/utils/validationFunctions.js ***!
+  \***************************************************/
+/*! exports provided: validateAll */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "validateAll", function() { return validateAll; });
+var emailIsValid = function emailIsValid(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+};
+
+var nameValidation = function nameValidation(input) {
+  return /^[A-Za-z]+$/.test(input);
+};
+
+var phoneNumberValidation = function phoneNumberValidation(phoneNumber) {
+  return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/i.test(phoneNumber);
+};
+
+var genderValidation = function genderValidation(userGender) {
+  return userGender != "";
+};
+
+var dateOfBirthValidation = function dateOfBirthValidation(day, month, year) {
+  console.log(day + "-" + month + "-" + year);
+  var finaldate = day + "-" + month + "-" + year;
+  console.log(finaldate);
+  return /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/.test(finaldate);
+};
+
+var validateAll = function validateAll(params) {
+  if (!nameValidation(params.fname)) {
+    alert("First Name is Required. It cannot be empty or use symbols.");
+    return false;
+  } //Name Validation - Last Name
+
+
+  if (!nameValidation(params.lname)) {
+    alert("Last Name is Required.  It cannot be empty or use symbols.");
+    return false;
+  } //Email Validation, already pre-checked.
+
+
+  if (!emailIsValid(params.email)) {
+    alert("Email Address is not valid. It cannot be empty.");
+    return false;
+  } //Phone Validation.
+
+
+  if (!phoneNumberValidation(params.mobileNumber)) {
+    alert("Phone Number is not valid. Please only use digits.");
+    return false;
+  } //Gender Validation
+
+
+  if (!genderValidation(params.gender)) {
+    alert("Gender Invalid. Please choose a Gender.");
+    return false;
+  } //Date of Birth Validation - must follow pattern of dd/mm/yyyy, e.g. 02/11/1990
+
+
+  if (!dateOfBirthValidation(params.dateOfBirthDD, params.dateOfBirthMM, params.dateOfBirthYYYY)) {
+    alert("Please input date of birth in format of dd/mm/yyyy, e.g. 02/11/1990");
+    return false;
+  }
+
+  return true;
+};
 
 /***/ }),
 

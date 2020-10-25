@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
             $table->string('mobileNumber'); //Required and valid.
             $table->enum('gender', ['Male', 'Female', 'Other']); //Required
             $table->date('dateOfBirth'); //Required and must follow pattern of dd/mm/yyyy e.g. 02/11/1990
-            $table->string('comments'); // Can be empty
+            $table->string('comments')->nullable(); // Can be empty
             $table->rememberToken();
             $table->timestamps();
         });
