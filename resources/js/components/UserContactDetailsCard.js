@@ -1,4 +1,4 @@
-import "./UserInputForm.css";
+import "../../css/UserInputForm.css";
 import React, { Component } from "react";
 
 export default class UserContactDetailsCard extends Component {
@@ -74,7 +74,6 @@ export default class UserContactDetailsCard extends Component {
                         </div>
                         <div className="form-row">
                             <div className="form-group col-md-1">
-                                {/* <label htmlFor="formDOB">Date of Birth</label> */}
                                 <input
                                     type="text"
                                     className="form-control dOBInputs"

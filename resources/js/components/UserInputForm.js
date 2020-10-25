@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import "./UserInputForm.css";
+import "../../css/UserInputForm.css";
 import axios from "axios";
 import { validateAll } from "../utils/validationFunctions";
 import UserDetailsCard from "./UserDetailsCard";

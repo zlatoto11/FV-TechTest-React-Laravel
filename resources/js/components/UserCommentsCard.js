@@ -1,4 +1,4 @@
-import "./UserInputForm.css";
+import "../../css/UserInputForm.css";
 import React, { Component } from "react";
 
 export default class UserCommentsCard extends Component {

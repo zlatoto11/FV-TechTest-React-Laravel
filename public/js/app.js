@@ -6327,14 +6327,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/UserInputForm.css":
-/*!***********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/UserInputForm.css ***!
-  \***********************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/UserInputForm.css":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/css/UserInputForm.css ***!
+  \*************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
@@ -66395,6 +66395,36 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/css/UserInputForm.css":
+/*!*****************************************!*\
+  !*** ./resources/css/UserInputForm.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--6-1!../../node_modules/postcss-loader/src??ref--6-2!./UserInputForm.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/css/UserInputForm.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -66474,8 +66504,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UserCommentsCard; });
-/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserInputForm.css */ "./resources/js/components/UserInputForm.css");
-/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css/UserInputForm.css */ "./resources/css/UserInputForm.css");
+/* harmony import */ var _css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -66582,8 +66612,8 @@ var UserCommentsCard = /*#__PURE__*/function (_Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UserContactDetailsCard; });
-/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserInputForm.css */ "./resources/js/components/UserInputForm.css");
-/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css/UserInputForm.css */ "./resources/css/UserInputForm.css");
+/* harmony import */ var _css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -66754,8 +66784,8 @@ var UserContactDetailsCard = /*#__PURE__*/function (_Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UserDetailsCard; });
-/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserInputForm.css */ "./resources/js/components/UserInputForm.css");
-/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css/UserInputForm.css */ "./resources/css/UserInputForm.css");
+/* harmony import */ var _css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -66879,36 +66909,6 @@ var UserDetailsCard = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
-/***/ "./resources/js/components/UserInputForm.css":
-/*!***************************************************!*\
-  !*** ./resources/js/components/UserInputForm.css ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!./UserInputForm.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/UserInputForm.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ "./resources/js/components/UserInputForm.js":
 /*!**************************************************!*\
   !*** ./resources/js/components/UserInputForm.js ***!
@@ -66923,8 +66923,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./UserInputForm.css */ "./resources/js/components/UserInputForm.css");
-/* harmony import */ var _UserInputForm_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_UserInputForm_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/UserInputForm.css */ "./resources/css/UserInputForm.css");
+/* harmony import */ var _css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_UserInputForm_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _utils_validationFunctions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/validationFunctions */ "./resources/js/utils/validationFunctions.js");
